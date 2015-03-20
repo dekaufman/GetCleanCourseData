@@ -12,8 +12,8 @@ actIDs.test <- read.table("test/y_test.txt", col.names=c("ActID"))
 who.train <- read.table("train/subject_train.txt", col.names=c("Who"))
 who.test <- read.table("test/subject_test.txt", col.names=c("Who"))
 
-x.trainD <- tbl_df(x.train)
-x.testD <- tbl_df(x.test)
+# x.trainD <- tbl_df(x.train)
+# x.testD <- tbl_df(x.test)
 
 # Put side-by-side data together
 train <- cbind(x.train, actIDs.train, who.train)
