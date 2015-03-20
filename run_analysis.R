@@ -32,3 +32,4 @@ fullstats <- fulldata[,statcols]
 # Get averages grouped by test subject and test activity
 output <- aggregate(.~Who + Activity, fullstats, mean)
 write.table(output,"AvgByActivityandSubject.txt",row.names = FALSE)
+
